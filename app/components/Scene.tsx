@@ -1,7 +1,7 @@
 "use client"
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
-import { RobotModel } from './Models'
+import { Models } from './Models'
 
 export default function Scene() {
     return (
@@ -11,7 +11,7 @@ export default function Scene() {
                 <color attach="background" args={["#eae7f0"]} />
                 {/* <ambientLight intensity={1.5} /> */}
              
-                <RobotModel position={[0, 0, 0]} scale={0.2} />
+                <Models position={[0, 0, 0]} scale={0.2} src={'/models/meiaaliancagab.glb'}/>
 
                 <OrbitControls />
             </Canvas>

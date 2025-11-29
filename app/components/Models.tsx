@@ -4,8 +4,8 @@ import { useLayoutEffect } from 'react'
 import { Mesh } from 'three'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function RobotModel(props: any) {
-    const { scene } = useGLTF('/models/meiaaliancagab.glb')
+export function Models(props: any) {
+    const { scene } = useGLTF(`${props.src}`)
     useLayoutEffect(() => {
         scene.traverse((o) => {
             
